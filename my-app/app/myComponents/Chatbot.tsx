@@ -34,7 +34,7 @@ const TypingBubble = () => {
       setIsDeleting(false);
       setMessageIndex((prev) => (prev + 1) % messages.length);
     }
-  }, [charIndex, isDeleting]);
+  }, [charIndex, isDeleting, messageIndex]);
 
   return (
     <div className="mt-16 flex flex-wrap items-center justify-center gap-6">

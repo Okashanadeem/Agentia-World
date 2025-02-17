@@ -14,16 +14,6 @@ const containerVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut', staggerChildren: 0.3 } },
 };
 
-const cardVariants = {
-  hidden: { opacity: 0, scale: 0.9 },
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: 'easeOut' } },
-};
-
-const skillVariants = {
-  hidden: { opacity: 0, y: 10 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
-};
-
 export default function Home() {
 
   const topLeters = [

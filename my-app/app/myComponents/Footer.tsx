@@ -25,7 +25,7 @@ export default function Footer() {
         {/* Logo & Description */}
         <motion.div variants={linkVariants} className="space-y-4">
           <div className="flex justify-center md:justify-start items-center space-x-3">
-            <a href="/" className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center space-x-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
@@ -46,7 +46,7 @@ export default function Footer() {
                 <path d="M9 13v2"></path>
               </svg>
               <span className="text-2xl font-bold tracking-wide">Agentia World</span>
-            </a>
+            </Link>
           </div>
           <p className="text-gray-400 text-sm leading-relaxed">
             Next-generation AI agents powering the future of enterprise intelligence.

@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="/" className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center space-x-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -42,7 +42,7 @@ export default function Navbar() {
                 <path d="M9 13v2"></path>
               </svg>
               <span className="text-xl font-bold">Agentia World</span>
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Menu */}
