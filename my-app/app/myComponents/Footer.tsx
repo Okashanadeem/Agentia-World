@@ -101,7 +101,7 @@ export default function Footer() {
         variants={linkVariants}
         className="mt-10 pt-6 text-center text-gray-400 text-sm"
       >
-        © 2025 Agentia World. Powered by <span className="text-blue-400">Panaversity</span>. All rights reserved.
+        © 2025 Agentia World. Powered by <span className="text-blue-400">Panaversity</span>. Made by Okasha - All rights reserved.
       </motion.div>
     </motion.footer>
   );
