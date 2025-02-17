@@ -59,7 +59,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="/launch-console"
+              href="/"
               className="px-4 py-2 rounded-lg bg-zinc-800 shadow-md border border-zinc-600 hover:border-zinc-400 hover:text-indigo-400 text-white transition duration-300"
             >
               Launch Console
