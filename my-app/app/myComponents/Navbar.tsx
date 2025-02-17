@@ -8,11 +8,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Features', path: '/features' },
-    { name: 'Technology', path: '/technology' },
-    { name: 'Agents', path: '/agents' },
-    { name: 'Pricing', path: '/pricing' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'Features', path: '#features' },
+    { name: 'Technology', path: '#technology' },
+    { name: 'Agents', path: '#agents' },
+    { name: 'Pricing', path: '#pricing' },
+    { name: 'Contact', path: '#contact' }
   ];
 
   return (
@@ -81,7 +81,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div
         className={`md:hidden flex flex-col items-center gap-4 py-4 bg-black/80 transition-all duration-300 ${
-          isOpen ? "opacity-100 max-h-screen" : "opacity-0 max-h-0 overflow-hidden"
+          isOpen ? 'opacity-100 max-h-screen' : 'opacity-0 max-h-0 overflow-hidden'
         }`}
       >
         {navLinks.map(({ name, path }) => (
@@ -95,7 +95,7 @@ export default function Navbar() {
           </Link>
         ))}
         <Link
-          href="/launch-console"
+          href="/"
           className="px-4 py-2 rounded-lg bg-zinc-800 shadow-md border border-zinc-600 hover:border-zinc-400 hover:text-indigo-400 text-white transition duration-300"
           onClick={() => setIsOpen(false)}
         >
