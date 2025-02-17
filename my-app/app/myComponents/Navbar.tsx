@@ -79,29 +79,36 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div
-        className={`md:hidden flex flex-col items-center gap-4 py-4 bg-black/80 transition-all duration-300 ${
-          isOpen ? 'opacity-100 max-h-screen' : 'opacity-0 max-h-0 overflow-hidden'
-        }`}
-      >
-        {navLinks.map(({ name, path }) => (
-          <Link
-            key={name}
-            href={path}
-            className="block text-white hover:text-gray-300 transition duration-300"
-            onClick={() => setIsOpen(false)}
-          >
-            {name}
-          </Link>
-        ))}
-        <Link
-          href="/"
-          className="px-4 py-2 rounded-lg bg-zinc-800 shadow-md border border-zinc-600 hover:border-zinc-400 hover:text-indigo-400 text-white transition duration-300"
-          onClick={() => setIsOpen(false)}
-        >
-          Launch Console
-        </Link>
-      </div>
+      
+
+{/* Mobile Menu */}
+<div
+  className={`md:hidden m-3 flex flex-col items-center gap-6 py-6 bg-gradient-to-b from-black/80 via-black/60 to-black/50 transition-all duration-500 ease-in-out ${
+    isOpen ? 'opacity-100 max-h-screen' : 'opacity-0 max-h-0 overflow-hidden'
+  }`}
+>
+  {/* Navigation Links */}
+  {navLinks.map(({ name, path }) => (
+    <Link
+      key={name}
+      href={path}
+      className="block text-white text-lg font-medium py-3 px-6 rounded-md w-full text-center hover:bg-indigo-500 hover:text-white transition duration-300 transform hover:scale-105"
+      onClick={() => setIsOpen(false)}
+    >
+      {name}
+    </Link>
+  ))}
+
+  {/* Launch Console Link */}
+  <Link
+    href="/launch-console"
+    className="px-6 py-3 mt-4 rounded-lg bg-zinc-800 shadow-lg border border-zinc-600 hover:border-zinc-400 hover:bg-zinc-700 text-white font-medium transition duration-300 w-full text-center transform hover:scale-105"
+    onClick={() => setIsOpen(false)}
+  >
+    Launch Console
+  </Link>
+</div>
+
     </nav>
   );
 }
